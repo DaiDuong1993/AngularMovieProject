@@ -1,0 +1,106 @@
+// LỊCH CHIẾU PHIM
+
+
+    .play_video{
+        width: 4000px !important;
+        height: 4000px !important;
+        text-align: center;
+        // position: absolute;
+        position: fixed;
+        padding-top:20%;
+        top:-20%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background-color: rgba(41, 39, 39, 0.301);
+        app-video{
+            height: 4000px !important;
+        }
+        
+    }
+    
+
+// HỆ THỐNG RẠP CHIẾU PHIM
+#cumrap{
+    text-align: center;
+    h1{
+        margin-bottom: 40px;
+    }
+    .hethongrap{
+        .hethongrap_icon{ 
+            display: block;
+            padding-top:20px;
+            border-bottom: none;
+            border-right: 1px rgba(238, 238, 238, 0.849) solid;
+            align-items: flex-end;
+            
+            li{
+                
+                margin-bottom: 10px;
+                width: 60%;
+                transform: translateX(50%);
+                
+                a{
+                    opacity: 0.6;
+                    &:hover,
+                    &.active{
+                        opacity: 1;
+                        border: none;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .hethongrap_cumrap{
+            color: white;
+            align-items: center;
+            text-align: center;
+            
+            .list_group{
+                min-height: 500px;
+                max-height: 650px;
+                margin-bottom: 10px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .list_group_item{
+                    cursor: pointer;
+                    opacity: 0.5;
+                    &:hover,
+                    &:focus,
+                    &.active{
+                        opacity: 1;
+                    }
+                    img{
+                        width: 100%;
+                        height: 80px;
+                        
+                    }
+                    div{
+                        text-align: left;
+                    }
+                }
+                
+               
+            }
+            
+              
+            // .list_group::-webkit-scrollbar {
+            //     width: 8px;
+            //   }
+            //   .list_group::-webkit-scrollbar-track {
+            //     background : #FF5A93;
+            //     border-radius: 10px;
+            //   }
+            //   .list_group::-webkit-scrollbar-thumb {
+            //     background : rgba(255,255,255,0.5);
+            //     border-radius: 10px;
+            //     box-shadow:  0 0 6px rgba(0, 0, 0, 0.5);
+            //   } 
+        }
+    }
+}

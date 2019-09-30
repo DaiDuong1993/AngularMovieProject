@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+header{
+    .navbar{
+        height: 81px;
+        position: fixed;
+        z-index: 9;
+        background-color: rgb(34, 190, 159);
+        transition:all 0.4s;
+        width: 100%;
+        top: -1px; /* At the top */
+        box-shadow: 0 0 15px rgba(68, 67, 67, 0.3); 
+        padding: 0px;
+        margin: 0px;
+        .left_part{
+            display: flex;
+            padding-top:15px;
+            justify-content: space-around;
+            width: 40%;
+            li{
+                list-style: none;
+                a{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: white;
+                }
+            }
+        }
+        .center_part{
+            text-align: center;
+            .logo{
+                padding-top: 25px;
+                padding-bottom: 30px;
+                z-index: 1;
+                background: #fff;
+                min-height: 130px;
+                position: absolute;
+                top:-40px;
+                right: 0;
+                text-align: center;
+                left: 0;
+                width: 230px;
+                margin: 0px auto;
+                border-radius: 10px;
+                svg{
+                    fill: rgb(34, 190, 159);
+                }
+                span{
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    color: #d9771cec;
+                    font-size: 22px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+        .right_part{
+            text-align: center;
+            .button{
+                cursor: pointer;
+                width: 150px;
+                margin: 0 auto;
+                line-height: 50px;
+                display:block;
+                position: relative;
+                color: white;
+                text-transform: uppercase;
+                font-family: monospace;
+                padding: 0px 10px;
+                background: black;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .5s all ease-out;
+                &:hover{
+                    text-decoration: none;
+                    border: 1px solid white;
+                }
+                &::before{
+                    content: "ĐĂNG NHẬP";
+                    padding-top: 5px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border: 1px solid white;
+                    transform: translate(-50%,-50%);
+                    z-index: -1;
+                    transition: all 0.2s ease-out;
+                }
+            }
+            .btn_login{
+                &::before{
+                    background: #CB711E;
+                    width: 120%;
+                    height: 0%;
+                    
+                }
+
+                &:hover::before{
+                    height: 120%;
+                    z-index: 1;
+                }
+
+            }
+            .btn_logout{
+                z-index: 2;
+                &::before{
+                    opacity: 0;
+                    content: "";
+                    background: rgb(244, 67, 54);
+                    width: 100%;
+                    height: 0%;
+                    transform: translate(-50%,-50%) rotate(45deg);
+                }
+
+                &:hover::before{
+                    height: 400%;  
+                    opacity: 1;
+                }
+
+            }        
+            
+        }
+   }
+
+}
+.fade_in{
+    animation: fadeIn 1s ease-in both ;
+    z-index: 22;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+	}
+	to {
+        opacity: 1;
+        
+		transform: translate3d(0, 0, 0);
+	}
+}
+@media screen and (max-width:768px){
+    header{
+        
+        button{
+            margin-right: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .navbar-nav{
+            background-color: #191919;
+            text-align: center;
+            li{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                
+                a{
+                    display: block;
+                    min-width: 100%;
+                    padding: 12px 20px;
+                    border-bottom: solid 1px #f0f0f0;
+                    color: black;
+                    padding: 12px 20px !important;
+                    
+                    line-height: 100px;
+                }
+                
+            }
+        }
+    }
+    
+}
+

@@ -1,0 +1,25 @@
+<div class="container ">
+    <div class="row">
+        <div class="col-md-8 mt-5"> 
+            <!--Thông tin ghế-->
+            <app-ghe [gheInput]="ghe" *ngFor="let ghe of lichChieu.danhSachGhe;let i=index">
+                <br *ngIf="(i+1)%16===0" />
+            </app-ghe>
+        </div>
+        <div class="col-md-4">
+            <!--Thông tin lịch chiếu của phim-->
+            <div class="container">
+                <p>
+                    Danh sách ghế đang đặt</p>
+                <span *ngFor="let gheDangDat of danhSachGheDangDat">
+                    {{gheDangDat.stt}}
+                </span>
+                -
+                <span>
+                    {{tongTien | number}}
+                </span>
+            </div>
+            <button [disabled]="danhSachGheDangDat.length===0" class="btn btn-success" (click)="datVe()">Đặt Vé</button>
+        </div>
+    </div>
+</div>

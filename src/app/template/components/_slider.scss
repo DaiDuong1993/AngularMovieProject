@@ -1,0 +1,165 @@
+.slider{
+    
+     height: 100%;
+     box-shadow: 0 0 15px rgba(0,0,0,.3); 
+     margin-bottom: 20px;
+     
+    .owl-theme{
+        // img{
+            
+        // }
+        .owl-dots{
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+           .owl-dot{
+               
+
+                span{
+                    width: 15px;
+                    height: 14px;
+                }
+               &:hover{
+                  span{
+                      background: red;
+                  } 
+               }
+               &:active{
+                span{
+                    background: red;
+                } 
+               }
+           }
+           .owl-dot.active{
+            
+                span{
+                 background: red;
+                }
+            
+           }
+
+        }
+        .owl-nav{
+            
+            .owl-prev{
+                position: absolute;
+                top: 45%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                width: 50px;
+                height: 100px;
+                z-index: 2;
+                opacity: .5;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                
+               
+                background-image: url("/../../../assets/images/back-session.png");
+                left: 13px;
+               
+            }
+            .owl-next{
+                position: absolute;
+                top: 45%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                width: 50px;
+                height: 100px;
+                z-index: 2;
+                opacity: .5;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url("/../../../assets/images/next-session.png");
+                right: 15px;
+                
+            }
+            
+            
+        }
+
+    }
+}
+.sliderPhim{
+    
+    .owl-theme{
+        .owl-dots{
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+           .owl-dot{
+               
+
+                span{
+                    width: 15px;
+                    height: 14px;
+                }
+               &:hover{
+                  span{
+                      background: red;
+                  } 
+               }
+               &:active{
+                span{
+                    background: red;
+                } 
+               }
+           }
+           .owl-dot.active{
+            
+                span{
+                 background: red;
+                }
+            
+           }
+
+        }
+        .owl-nav{
+            
+            .owl-prev{
+                position: absolute;
+                top: 45%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                width: 60px;
+                height: 110px;
+                z-index: 2;
+                opacity: .5;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                
+               
+                background-image: url("/../../../assets/images/back-session.png");
+                left: -70px;
+               
+            }
+            .owl-next{
+                position: absolute;
+                top: 45%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                border: none;
+                width: 60px;
+                height: 110px;
+                z-index: 2;
+                opacity: .5;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url("/../../../assets/images/next-session.png");
+                right: -70px;
+                
+            }
+            
+            
+        }
+
+    }
+}

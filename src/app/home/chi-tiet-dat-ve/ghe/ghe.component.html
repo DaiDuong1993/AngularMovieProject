@@ -1,0 +1,5 @@
+<button *ngIf="gheInput.daDat" disabled class="ghe gheDaDat">X</button>
+
+<button *ngIf="!gheInput.daDat" [ngClass]="{'gheVip':gheInput.loaiGhe==='Vip','gheDangDat':dangDat}" class="ghe" (click)="datGhe()">{{gheInput.stt}}</button>
+
+<ng-content></ng-content>
